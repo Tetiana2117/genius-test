@@ -1,0 +1,66 @@
+:root {
+  --color-primary-dark: #31261a;
+  --color-primary-light: #faf4ea;
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
+}
+
+/* Base */
+.body {
+  color: var(--color-primary-dark);
+}
+ul {
+  list-style-type: none;
+}
+/* всі марковані перелікі будуть без крапки */
+
+/* Button */
+.button {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 8px;
+  cursor: pointer;
+  /* при наведенні курсор змінюється на долонь */
+}
+
+button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+/* інтерактив: змінює колір при наведенні на прозорий */
+
+button:focus {
+  background-color: #ceeaa4;
+}
+
+/* Link */
+.link {
+  color: var(--color-primary-light);
+}
+.link:hover {
+  color: var(--color-brand-light);
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-primary-light);
+}
+
+.hero-title span {
+  color: var(--color-brand-light);
+}
+
+/* advanteges section */
+.advanteges-list {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+}
+
+.section-title {
+  color: var(--color-primary-dark);
+}
+
+.section-title .accent {
+  color: var(--color-brand-dark);
+}
