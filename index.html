@@ -5,33 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <!--прив'язка к файлу styles-->
   </head>
   <body>
     <header>
       <nav>
-        <a href="#"></a>
-        <img src="./images/logo.svg" alt="логотип сучасної пекарні" />
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="логотип сучасної пекарні" />
+        </a>
         <ul>
-          <li><a href="#">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#chef-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#format-section">Формати</a></li>
+          <li><a class="link" href="#kontacts-section">Контакти</a></li>
+          <!-- для посилань потрiбно для кожного рядка задавати clas -->
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
+      <button class="button" type="button">Замовити дзвінок</button>
     </header>
     <main>
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-title"><span>Сучасна</span> пекарня</h1>
+        <!-- span для додаткової стилізації окремого слова -->
       </section>
-      <section>
-        <ul>
+      <section id="traditions-section">
+        <ul class="advanteges-list">
+          <!--для простоого переліку(не посилання) потрібно один раз задати clas -->
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h2>Новий формат традицій</h2>
+        <h2 class="section-title">Новий формат традицій</h2>
         <p>
           <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
@@ -46,8 +51,10 @@
           />
         </p>
       </section>
-      <section>
-        <h2>Наші найкращі шеф-кухарі</h2>
+      <section id="chef-section">
+        <h2 class="section-title">
+          Наші найкращі <span class="accent">шеф-кухарі</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -72,8 +79,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Формати</h2>
+      <section id="format-section">
+        <h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -92,8 +99,16 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Приєднуйся до мережі пекарень</h2>
+      <section id="kontacts-section">
+        <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1638712576787!2d30.488658576813403!3d50.45667308691551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1699619334244!5m2!1sru!2spl"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
@@ -102,7 +117,6 @@
           <img src="./images/logo.svg" alt="логотип сучасної пекарні" />
         </a>
         <ul>
-          <li><a href="#">Франшиза</a></li>
           <li><a href="#">Наші традиції</a></li>
           <li><a href="#">Шеф-кухарі</a></li>
           <li><a href="#">Формати</a></li>
